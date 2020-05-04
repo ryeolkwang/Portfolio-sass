@@ -1,0 +1,80 @@
+.intro {
+	margin-top: 60px;
+	padding: 0 80px 100px;
+	background-color: black;
+	border-radius: 0 0 100% 100% / 30%;
+}
+
+.intro__title {
+	padding-top: 5rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-align: center;
+
+	span {
+		display: inline-block;
+		padding: 2rem 0;
+		font-size: 2.5rem;
+	}
+
+	&--top {
+		animation: moveInLeft 1s ease-out;
+	}
+
+	&--middle {
+		animation: moveInBottom 1s ease-out 1s backwards;
+	}
+
+	&--bottom {
+		animation: moveInRight 1s ease-out 2s backwards;
+	}
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    80% {
+        transform: translateY(-0.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
