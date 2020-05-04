@@ -1,7 +1,7 @@
 .intro {
-	margin-top: 60px;
-	padding: 0 80px 100px;
-	background-color: black;
+	margin: 5rem 0;
+	padding: 0 5rem 10rem;
+	background-color: $background-color;
 	border-radius: 0 0 100% 100% / 30%;
 }
 
@@ -29,52 +29,4 @@
 	&--bottom {
 		animation: moveInRight 1s ease-out 2s backwards;
 	}
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-        transform: translateX(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(3rem);
-    }
-
-    80% {
-        transform: translateY(-0.5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
 }

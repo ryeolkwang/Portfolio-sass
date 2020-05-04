@@ -1,7 +1,17 @@
 .footer {
-	margin: 5rem auto;
-	display: flex;
-	justify-content: center;
-	font-size: 1.4rem;
-	color: black;
+	text-align: center;
+
+	.material-icons {
+		position: relative;
+		top: -2rem;
+		font-size: 4rem;
+		color: #fff;
+		background-color: #e2199f;
+	}
+
+	&-text {
+		margin: 5rem auto;
+		font-size: 1.4rem;
+		color: $font-color;
+	}
 }

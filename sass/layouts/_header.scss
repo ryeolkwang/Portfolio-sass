@@ -4,18 +4,18 @@
 	position: fixed;
 	top: 0;
 	padding: 1rem 5rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	z-index: 100;
 }
 
-.header__logo {
-	width: 4rem;
-	height: 4rem;
-}
-
 .header__nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-logo {
+		width: 4rem;
+		height: 4rem;
+	}
 
 	&-list {
 		display: flex;
