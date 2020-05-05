@@ -40,10 +40,10 @@
 			color: white;
 			background-image: linear-gradient(
 				30deg,
-				white 10%,
-				black 10%,
-				black 90%,
-				white 90%
+				#fff 10%,
+				rgba(0, 0, 0, 0.8) 10%,
+				rgba(0, 0, 0, 0.8) 90%,
+				#fff 90%
 			);
 			border-radius: 0.6rem;
 
@@ -55,6 +55,11 @@
 				&--title {
 					font-size: 2rem;
 					font-weight: bold;
+
+					.material-icons {
+						vertical-align: text-bottom;
+						margin-right: .3rem;
+					}
 				}
 
 				&--desc {
