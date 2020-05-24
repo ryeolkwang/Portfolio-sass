@@ -27,31 +27,72 @@
 		<title>Kwang's Portfolio | About Me!</title>
 	</head>
 	<body>
+		<div class="navigation">
+			<input
+				type="checkbox"
+				class="navigation__checkbox"
+				id="navi-toggle"
+			/>
+			<label for="navi-toggle" class="navigation__button">
+				<span class="navigation__icon">&nbsp;</span>
+			</label>
+
+			<div class="navigation__background">&nbsp;</div>
+			<nav class="navigation__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#projects" class="navigation__link">
+							<span>01</span>Projects
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#profile" class="navigation__link">
+							<span>02</span>Profile
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#blog" class="navigation__link">
+							<span>03</span>Blog
+						</a>
+					</li>
+					<li class="navigation__item">
+						<a href="#contact" class="navigation__link">
+							<span>04</span>Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
 		<header class="header">
 			<nav class="header__nav">
-                <img class="header__nav-logo" alt="Vue logo" src="../img/logo.png" />
+				<img
+					class="header__nav-logo"
+					alt="Vue logo"
+					src="img/logo.png"
+				/>
 				<ul class="header__nav-list">
-					<li><a href="#projects">projects</a></li>
-					<li><a href="#profile">profile</a></li>
-					<li><a href="#blog">blog</a></li>
-					<li><a href="#contact">contact</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
-			<div class="intro">
+			<section class="intro">
 				<div class="intro__title">
 					<span class="intro__title--top">WELCOME</span> to my<br />
 					<span class="intro__title--middle">PORTFOLIO</span> in sass
 					and vanilla js<br />
 					from <span class="intro__title--bottom">TOKYO</span> Japan
 				</div>
-			</div>
+			</section>
 
-			<div id="projects" class="projects">
+			<section id="projects" class="projects">
 				<div class="project__title">
-                    <i class="material-icons">assignment</i>
+					<i class="material-icons">assignment</i>
 					Projects
 				</div>
 				<div class="project__main">
@@ -64,8 +105,8 @@
 								<div class="card-back">
 									<div class="card-back--title">
 										Food Takeout App
-                                    </div>
-                                    <div class="card-back--desc">
+									</div>
+									<div class="card-back--desc">
 										Vue.js
 									</div>
 									<div class="card-back--footer">
@@ -82,8 +123,8 @@
 								<div class="card-back">
 									<div class="card-back--title">
 										Early Wage Access
-                                    </div>
-                                    <div class="card-back--desc">
+									</div>
+									<div class="card-back--desc">
 										Powerpoint Excel
 									</div>
 									<div class="card-back--footer">
@@ -91,8 +132,8 @@
 									</div>
 								</div>
 							</div>
-                        </li>
-                        <li class="break"></li>
+						</li>
+						<li class="break"></li>
 						<li class="card">
 							<div class="card-inner">
 								<div class="card-front">
@@ -101,8 +142,8 @@
 								<div class="card-back">
 									<div class="card-back--title">
 										Portfolio
-                                    </div>
-                                    <div class="card-back--desc">
+									</div>
+									<div class="card-back--desc">
 										Vue.js Sass
 									</div>
 									<div class="card-back--footer">
@@ -119,8 +160,8 @@
 								<div class="card-back">
 									<div class="card-back--title">
 										Studying
-                                    </div>
-                                    <div class="card-back--desc">
+									</div>
+									<div class="card-back--desc">
 										Udemy courses!
 									</div>
 									<div class="card-back--footer">
@@ -131,11 +172,11 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 
-			<div id="profile" class="profile">
+			<section id="profile" class="profile">
 				<div class="profile__title">
-                    <i class="material-icons">person</i>
+					<i class="material-icons">person</i>
 					About
 				</div>
 				<div class="profile__main">
@@ -146,11 +187,11 @@
 						My name is Kwang
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div id="blog" class="blog">
+			<section id="blog" class="blog">
 				<div class="blog__title">
-                    <i class="material-icons">chrome_reader_mode</i>
+					<i class="material-icons">chrome_reader_mode</i>
 					Blog
 				</div>
 				<div class="blog__main">
@@ -158,7 +199,7 @@
 						<li class="card">
 							<div class="card__content">
 								<div class="card__content--title">
-                                    <i class="material-icons">looks_one</i>
+									<i class="material-icons">looks_one</i>
 									January
 								</div>
 								<div class="card__content--desc">
@@ -169,7 +210,7 @@
 						<li class="card">
 							<div class="card__content">
 								<div class="card__content--title">
-                                    <i class="material-icons">looks_two</i>
+									<i class="material-icons">looks_two</i>
 									February
 								</div>
 								<div class="card__content--desc">
@@ -180,7 +221,7 @@
 						<li class="card">
 							<div class="card__content">
 								<div class="card__content--title">
-                                    <i class="material-icons">looks_3</i>
+									<i class="material-icons">looks_3</i>
 									March
 								</div>
 								<div class="card__content--desc">
@@ -190,11 +231,11 @@
 						</li>
 					</ul>
 				</div>
-			</div>
+			</section>
 
-			<div id="contact" class="contact">
+			<section id="contact" class="contact">
 				<div class="contact__title">
-                    <i class="material-icons">contacts</i>
+					<i class="material-icons">contacts</i>
 					Contact Me
 				</div>
 				<div class="contact__main">
@@ -202,14 +243,11 @@
 						<div class="contact__form--top">
 							<div class="contact__form--group">
 								<label for="name">Name</label>
-								<input name="name" type="text"/>
+								<input name="name" type="text" />
 							</div>
 							<div class="contact__form--group">
 								<label for="email">Email</label>
-								<input
-									name="email"
-									type="email"
-								/>
+								<input name="email" type="email" />
 							</div>
 						</div>
 						<div class="contact__form--bottom">
@@ -219,16 +257,16 @@
 						<button type="button">Submit</button>
 					</form>
 				</div>
-			</div>
+			</section>
 		</main>
 
 		<footer class="footer">
-            <a href="#">
-                <i class="material-icons">publish</i>
-            </a>
-            <div class="footer-text">
-                Copyrights 2020 My Portfolio in html, css & sass
-            </div>
+			<a href="#">
+				<i class="material-icons">publish</i>
+			</a>
+			<div class="footer-text">
+				Copyrights 2020 My Portfolio in html, css & sass
+			</div>
 		</footer>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>

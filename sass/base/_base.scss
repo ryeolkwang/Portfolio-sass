@@ -8,18 +8,25 @@
 
 html {
 	font-size: 62.5%;
+
+	@include respond(tab-land) {
+		font-size: 62.5%; //1rem = 9px, 9/16 = 62.5%;
+    }
+    
+    @include respond(tab-port) {
+		font-size: 50%; //1rem = 8px, 8/16 = 50%;
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%; //1rem = 12px, 12/16 = 75%;
+	}
 }
 
 body {
-	font-family: "Lato", sans-serif;
-	font-weight: 400;
-	/* font-size: 16px; */
-	line-height: 1.2;
-	color: $font-color;
     box-sizing: border-box;
 }
 
 a {
 	text-decoration: none;
-	color: $font-color;
+	color: $color-grey-dark;
 }

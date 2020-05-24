@@ -5,13 +5,13 @@
 		position: relative;
 		top: -2rem;
 		font-size: 4rem;
-		color: #fff;
-		background-color: #e2199f;
+		color: $color-white;
+		background-color: $color-pink;
 	}
 
 	&-text {
 		margin: 5rem auto;
 		font-size: 1.4rem;
-		color: $font-color;
+		color: $color-grey-dark;
 	}
 }

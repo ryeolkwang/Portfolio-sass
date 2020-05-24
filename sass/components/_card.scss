@@ -1,30 +1,3 @@
-.projects {
-	position: relative;
-	margin: 5rem 0;
-}
-
-.project__title {
-	margin: 0 auto 5rem;
-	font-size: 3.2rem;
-	font-weight: bold;
-	text-align: center;
-	letter-spacing: 0.2rem;
-	text-transform: uppercase;
-
-	&::after {
-		content: "";
-		display: block;
-		position: relative;
-		top: 1rem;
-		left: 50%;
-		transform: translateX(-50%);
-		text-align: center;
-		height: 0.3rem;
-		width: 6rem;
-		background-color: #000;
-	}
-}
-
 .project__main {
 	.project__cards {
 		padding: 0 2rem;
@@ -132,7 +105,7 @@
 			}
 
 			&-back {
-				background-color: $background-color;
+				background-color: $color-grey-light;
 				transform: rotateY(180deg);
 
 				&--title {
@@ -144,14 +117,14 @@
 
 				&--desc {
 					margin-bottom: 6rem;
-					color: #e2199f;
-					font-size: 1.6rem;
+					color: $color-pink;
+					font-size: $default-font-size;
 				}
 
 				&--footer {
-					font-size: 1.6rem;
+					font-size: $default-font-size;
 					letter-spacing: 1.3px;
-					border: 1px solid #e2199f;
+					border: 1px solid $color-pink;
 					display: flex;
 					align-items: center;
 					justify-content: center;
@@ -159,14 +132,14 @@
 
 					a {
 						padding: 1rem 1.5rem;
-						color: $font-color;
+						color: $color-grey-dark;
 						text-decoration: none;
 					}
 
 					:hover {
 						padding: 1rem 1.5rem;
-						color: white;
-						background-color: #e2199f;
+						color: $color-white;
+						background-color: $color-pink;
 						display: flex;
 						align-items: center;
 						justify-content: center;
