@@ -18,6 +18,10 @@
 	}
 
 	&-list {
+		@include respond(tab-land) {
+			display: none;
+		}
+
 		display: flex;
 
 		li {

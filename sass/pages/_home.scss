@@ -58,6 +58,24 @@
 	}
 }
 
+.project__cards {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	&::before, 
+	&::after {
+		content: '';
+		width: 100%;
+		order: 1;
+	}
+
+	.col-1-of-2 {
+		width: 50%;
+	}
+}
+
 .profile {
 	position: relative;
 	padding: 5rem;
@@ -102,7 +120,7 @@
 		border-radius: 50%;
 		background-image: radial-gradient(circle, $color-white, $color-black);
 		margin: 0 5rem 3rem;
-		text-indent: 999rem;
+		text-indent: -9999rem;
 	}
 	
 	&--desc {

@@ -1,151 +1,123 @@
-.project__main {
-	.project__cards {
-		padding: 0 2rem;
+.card {
+	perspective: 150rem;
+	position: relative;
+	height: 32rem;
+	width: 32rem;	
+
+	&__side {
+		height: 32rem;
+		transition: all .8s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		overflow: hidden;
+
+		&--front {
+			background-color: $color-white;
+		}
+
+		&--back {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: $color-grey-light;
+			transform: rotateY(180deg);
+		}
+	}
+
+	&:hover &__side--front {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0);
+	}
+
+	&__picture {
+		height: 100%;
+		background-color: $color-white;
+		text-indent: -9999rem;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		&-1 {
+			background-image: linear-gradient(
+					to right bottom,
+					rgba(165, 165, 165, 0.1),
+					rgba(95, 95, 95, 0.1)
+				),
+				url(../img/linepockeo.png);
+		}
+
+		&-2 {
+			background-image: radial-gradient(
+					circle at left center,
+					rgba(255, 255, 255, 0.7),
+					rgba(92, 92, 92, 0.8)
+				),
+				url(../img/earlywage.jpg);
+		}
+
+		&-3 {
+			order: 1;
+			background-image: linear-gradient(
+					to right bottom,
+					rgba(165, 165, 165, 0.2),
+					rgba(95, 95, 95, 0.2)
+				),
+				url(../img/portfolio.png);
+		}
+
+		&-4 {
+			order: 1;
+			background-image: radial-gradient(
+					rgba(255, 255, 255, 0.7),
+					rgba(92, 92, 92, 0.8)
+				),
+				url(../img/studying.jpg);
+		}
+	}
+
+	&__title {
+		margin-top: 8rem;
+		line-height: 2.6rem;
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
+	&__desc {
+		margin-bottom: 6rem;
+		color: $color-pink;
+		font-size: $default-font-size;
+	}
+
+	&__footer {
+		font-size: $default-font-size;
+		letter-spacing: 1.3px;
+		border: 1px solid $color-pink;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		flex-wrap: wrap;
+		text-transform: uppercase;
 
-		.break {
-			flex-basis: 100%;
-			height: 0;
+		a {
+			padding: 1rem 1.5rem;
+			color: $color-grey-dark;
+			text-decoration: none;
 		}
 
-		.card {
-			list-style-type: none;
-			box-sizing: border-box;
-			width: 32rem;
-			height: 32rem;
-			text-align: center;
-
-			&-inner {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				transition: transform 1s;
-				transform-style: preserve-3d;
-			}
-
-			&:hover {
-				.card-inner {
-					transform: rotateY(180deg);
-				}
-			}
-
-			&-front,
-			&-back {
-				position: absolute;
-				padding: 3rem;
-				width: 100%;
-				height: 100%;
-				backface-visibility: hidden;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-			}
-
-			&-front {
-				justify-content: center;
-				text-indent: -999rem;
-			}
-
-			&:first-of-type {
-				.card-front {
-					background-image: linear-gradient(
-							to right bottom,
-							rgba(165, 165, 165, 0.1),
-							rgba(95, 95, 95, 0.1)
-						),
-						url(../img/linepockeo.png);
-					background-position: center;
-					background-size: 50rem;
-					background-repeat: no-repeat;
-				}
-			}
-
-			&:nth-of-type(2) {
-				.card-front {
-					background-image: radial-gradient(
-							circle at left center,
-							rgba(255, 255, 255, 0.7),
-							rgba(92, 92, 92, 0.8)
-						),
-						url(../img/earlywage.jpg);
-					background-position: center;
-					background-size: cover;
-					background-repeat: no-repeat;
-				}
-			}
-
-			&:nth-of-type(4) {
-				.card-front {
-					background-image: linear-gradient(
-							to right bottom,
-							rgba(165, 165, 165, 0.2),
-							rgba(95, 95, 95, 0.2)
-						),
-						url(../img/portfolio.png);
-					background-position: center;
-					background-size: cover;
-					background-repeat: no-repeat;
-				}
-			}
-
-			&:nth-of-type(5) {
-				.card-front {
-					background-image: radial-gradient(
-							rgba(255, 255, 255, 0.7),
-							rgba(92, 92, 92, 0.8)
-						),
-						url(../img/studying.jpg);
-					background-position: center;
-					background-size: cover;
-					background-repeat: no-repeat;
-				}
-			}
-
-			&-back {
-				background-color: $color-grey-light;
-				transform: rotateY(180deg);
-
-				&--title {
-					margin-top: 8rem;
-					line-height: 2.6rem;
-					font-size: 1.8rem;
-					font-weight: 700;
-				}
-
-				&--desc {
-					margin-bottom: 6rem;
-					color: $color-pink;
-					font-size: $default-font-size;
-				}
-
-				&--footer {
-					font-size: $default-font-size;
-					letter-spacing: 1.3px;
-					border: 1px solid $color-pink;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					text-transform: uppercase;
-
-					a {
-						padding: 1rem 1.5rem;
-						color: $color-grey-dark;
-						text-decoration: none;
-					}
-
-					:hover {
-						padding: 1rem 1.5rem;
-						color: $color-white;
-						background-color: $color-pink;
-						display: flex;
-						align-items: center;
-						justify-content: center;
-					}
-				}
-			}
+		:hover {
+			padding: 1rem 1.5rem;
+			color: $color-white;
+			background-color: $color-pink;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 }
