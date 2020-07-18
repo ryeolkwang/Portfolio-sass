@@ -64,9 +64,9 @@
 	justify-content: center;
 	flex-wrap: wrap;
 
-	&::before, 
+	&::before,
 	&::after {
-		content: '';
+		content: "";
 		width: 100%;
 		order: 1;
 	}
@@ -122,7 +122,7 @@
 		margin: 0 5rem 3rem;
 		text-indent: -9999rem;
 	}
-	
+
 	&--desc {
 		box-sizing: border-box;
 		width: 50%;

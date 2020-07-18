@@ -5,6 +5,10 @@
 	top: 0;
 	padding: 0 5rem;
 	z-index: 100;
+
+	@include respond(phone) {
+		padding: 0 1rem;
+	}
 }
 
 .header__nav {
